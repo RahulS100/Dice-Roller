@@ -1,0 +1,88 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
+/*reset the values*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.main_con {
+    display: flex;
+    background-color: #FF865E;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.roll-btn {
+    height: 50px;
+    width: 120px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.roll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.600);
+    color: white;
+}
+
+.dice-img {
+    width: 260px;
+    height: 260px;
+}
+
+/*////////////////mobile and tab version///////////////*/
+/*//////////////////////for 0px to 400px display/////////////////*/
+@media  screen and (max-width: 400px) {
+    .heading {
+        font-size: 0.9rem;
+        margin-bottom: 40px;
+    }
+
+    .dice-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .roll-btn {
+        margin-top: 50px;
+    }
+
+}
+
+@media  screen and (min-width: 400px) and (max-width: 700px) {
+    .heading {
+        font-size: 1.1rem;
+    }
+
+    .dice-img {
+        width: 220px;
+        height: 220px;
+    }
+
+}
+
+@media  screen and (min-width: 700px) and (max-width: 900px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .dice-img {
+        width: 240px;
+        height: 240px;
+    }
+}
